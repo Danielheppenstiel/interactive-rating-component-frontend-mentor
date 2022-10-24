@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <main>
+
+    <section class="container-main">
+
+          <!-- RATING SECTION -->
+
+      <div class="card-front">
+        <img class="star-img" src="images/icon-star.svg" alt="">
+        <h1 class="title">How did we do?</h1>
+        <p class="info">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating-buttons">
+          <input class="radio-btn" value="1" type="radio" id="one">
+          <label class="rating-number one active" for="one">1</label>
+          <input class="radio-btn" value="2" type="radio" id="two">
+          <label class="rating-number two" for="two">2</label>
+          <input class="radio-btn three" value="3" type="radio" id="three">
+          <label class="rating-number" for="three">3</label>
+          <input class="radio-btn four" value="4" type="radio" id="four">
+          <label class="rating-number" for="four">4</label>
+          <input class="radio-btn five" value="5" type="radio" id="five">
+          <label class="rating-number" for="five">5</label>
+        </div>
+        <div class="submit">
+          <button class="submit-btn">Submit</button>
+        </div>
+      </div>
+
+      <!-- THANK YOU SECTION -->
+
+      <div class="thank-you">
+        <div class="container-two">
+          <img class="ty-icon" src="images/illustration-thank-you.svg" alt="">
+          <div class="selected">
+            <p class="rating-selected">You selected <span class="rating-choice"> </span> out of 5</p>
+          </div>
+          <h1 class="ty-title">Thank You!</h1>
+          <p class="ty-info">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+       </div>
+      </div>
+
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
